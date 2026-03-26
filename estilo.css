@@ -14,10 +14,13 @@
 
 .box1 {
     background-color: #63b1bc;
+   
+    
 }
 
 .box2 {
     background-color: #1f2a44;
+
 }
 
 .box3 {
@@ -35,24 +38,42 @@ h1 {
 
 /* Insira o código abaixo */
 
+/*Normal -padrão*/
 .container1 {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+/* em linha, mas colado no final*/
 .container2 {
-    
+    display: flex;
+    justify-content: flex-end;
 }
 
+/* centralizados com gap */
 .container3 {
-   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Itens em coluna  */
 .container4 {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar na horizontal já que é coluna */
 }
+
+/* Container 5: Espaçamento entre  */
 .container5 {
-    
+    display: flex;
+    justify-content: space-between;
 }
-.container-6 {
-    
+
+/* Ordem inversa */
+.container6 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
